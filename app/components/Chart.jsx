@@ -17,7 +17,8 @@ var DoughnutChart = React.createClass({
             title: '',
             graphColor:'',//rgb color code
             textColor:'0,0,0',//rgb color code
-            percentChange: 0
+            percentChange: 0,
+            graphData: []
         };
     },
     propTypes: {
@@ -143,7 +144,7 @@ var DoughnutChart = React.createClass({
         var title = this.props.title;
 
         if(typeof this.props.graphColor==='string' && typeof this.props.textColor==='string' && typeof this.props.percentChange==='number' && typeof this.props.title==='string' &&  typeof this.props.graphData==='object'
-            && this.props.graphColor!=null  && this.props.textColor!=null && this.props.percentChange!=null && this.props.title!=null && this.props.graphData!=null ){
+            && this.props.graphColor!=null  && this.props.textColor!=null && this.props.percentChange!=null && this.props.title!=null && this.props.graphData!=null && this.props.graphData.length>0 ){
             return (
             <div>
                 <p className="chartHeading" style={textStyle}>{title}</p>
