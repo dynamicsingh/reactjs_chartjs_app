@@ -22,8 +22,6 @@ module.exports = {
     root: __dirname,
     alias: {
       Main: 'app/components/Main.jsx',
-      Title: 'app/components/Title.jsx',
-      PercentageChange: 'app/components/PercentageChange.jsx',
       DoughnutChart: 'app/components/Chart.jsx',
       applicationStyles: 'app/styles/app.scss'
     },
